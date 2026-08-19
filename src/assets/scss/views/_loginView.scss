@@ -1,0 +1,32 @@
+.login-view {
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+    padding: 24px;
+    background: linear-gradient(135deg, #f5f7fb, #e8edf5);
+}
+
+.login-box {
+    display: grid;
+    gap: 16px;
+    width: min(100%, 420px);
+    padding: 28px;
+    background: var(--layout-color);
+    border: 1px solid var(--line-color);
+    border-radius: 8px;
+    box-shadow: 0 16px 48px rgba(16, 24, 40, 0.12);
+}
+
+.login-head {
+    display: grid;
+    gap: 4px;
+
+    h1,
+    p {
+        margin: 0;
+    }
+
+    p {
+        color: var(--muted-color);
+    }
+}

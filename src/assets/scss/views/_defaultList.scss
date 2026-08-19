@@ -1,0 +1,32 @@
+.form-grid {
+    display: grid;
+    gap: 14px;
+}
+
+.action-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.list-row {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) minmax(220px, 2fr) auto;
+    gap: 14px;
+    align-items: center;
+    padding: 16px;
+    background: var(--layout-color);
+    border: 1px solid var(--line-color);
+    border-radius: 8px;
+
+    small {
+        color: var(--muted-color);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .list-row {
+        grid-template-columns: 1fr;
+    }
+}
