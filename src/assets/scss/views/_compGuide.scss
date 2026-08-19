@@ -1,0 +1,40 @@
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.guide-section {
+    display: grid;
+    gap: 14px;
+    padding: 18px;
+    border: 1px solid var(--line-color);
+    border-radius: 8px;
+    background: var(--layout-color);
+
+    h2 {
+        margin: 0;
+        font-size: 1.05rem;
+    }
+}
+
+.guide-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.guide-value {
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: var(--muted-color);
+    background: var(--content-color);
+    font-size: 0.875rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+}

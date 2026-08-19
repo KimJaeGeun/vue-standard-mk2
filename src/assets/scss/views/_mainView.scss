@@ -1,0 +1,46 @@
+.page-stack {
+    display: grid;
+    gap: 20px;
+}
+
+.page-title {
+    h1 {
+        margin: 0 0 6px;
+        font-size: 28px;
+    }
+
+    p {
+        margin: 0;
+        color: var(--muted-color);
+    }
+}
+
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.metric-card {
+    display: grid;
+    gap: 8px;
+    padding: 20px;
+    background: var(--layout-color);
+    border: 1px solid var(--line-color);
+    border-radius: 8px;
+
+    span,
+    small {
+        color: var(--muted-color);
+    }
+
+    strong {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .metric-grid {
+        grid-template-columns: 1fr;
+    }
+}
